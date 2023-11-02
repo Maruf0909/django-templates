@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - My Blog{% endblock %}
+
+{% block style_block %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock style_block %}
+
+{% block content %}
+    <h1>Welcome to My Blog</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac justo vitae arcu facilisis ultrices.
+        Nunc consectetur, dui a venenatis ultricies, justo purus hendrerit risus, quis dapibus arcu augue non libero.
+    </p>
+
+    <h2>Latest Posts</h2>
+    <ul>
+        <li>
+            {% comment %} <a href="{% url 'blog:post_detail' 1 %}">Post Title 1</a>
+            <p>Published on January 1, 2023</p>
+        </li>
+        <li>
+            <a href="{% url 'blog:post_detail' 2 %}">Post Title 2</a>
+            <p>Published on January 15, 2023</p> {% endcomment %}
+        </li>
+        <!-- Add more recent posts as needed -->
+    </ul>
+{% endblock %}
