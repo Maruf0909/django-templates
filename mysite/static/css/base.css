@@ -1,23 +1,32 @@
 /* Reset some default browser styles */
-body, h1, h2, h3, p, ul, li, a {
+body, h1, h2, p, ul, li, a, form, input, textarea, button {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
-/* Apply a background color and font to the body */
+/* Universal styles for better typography and readability */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start;
+    min-height: 100vh; /* Ensure full viewport height */
 }
 
-/* Style the header */
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+    width: 100%;
 }
 
-/* Style the navigation menu */
+/* Navigation styles */
 nav ul {
     list-style: none;
 }
@@ -33,21 +42,27 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Style the main content area */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area styles */
 main {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 20px 0;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
-/* Style the footer */
+/* Footer styles */
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
     color: #fff;
+    width: 100%;
 }
 
-/* Additional styles can be added as needed */
+/* Add more specific styles for different elements and pages as needed */
