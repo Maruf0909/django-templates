@@ -1,0 +1,45 @@
+/* Style the About Us heading */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the introductory paragraph */
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Style the mission heading */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Style the mission statement */
+p.mission {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Style the Meet the Team section */
+h2.team {
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Style team member names */
+li strong {
+    font-weight: bold;
+}
+
+/* Style team member roles */
+li p {
+    font-size: 14px;
+    color: #999;
+}

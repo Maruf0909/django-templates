@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Blogs - My Blog{% endblock %}
+{% block style_block %}
+    <link rel="stylesheet" href="{% static 'css/blogs.css' %}">
+{% endblock style_block %}
+
+{% block content %}
+    <h1>Latest Blogs</h1>
+
+    <ul>
+        <li>
+            <h2><a href="#">Blog Post Title 1</a></h2>
+            <p>Published on January 1, 2023</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et eros quis arcu aliquet vulputate.</p>
+        </li>
+        <li>
+            <h2><a href="#">Blog Post Title 2</a></h2>
+            <p>Published on January 15, 2023</p>
+            <p>Nullam vehicula eros ut purus fringilla, id euismod elit efficitur. Aliquam erat volutpat.</p>
+        </li>
+        <!-- Add more blog posts as needed -->
+    </ul>
+{% endblock %}

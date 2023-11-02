@@ -1,0 +1,49 @@
+/* Style the Latest Blogs heading */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the blog post list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 30px;
+}
+
+/* Style blog post titles */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style publication date */
+p {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+/* Style blog post descriptions */
+p.blog-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Style links within blog post titles */
+h2 a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+/* Style links within blog post titles on hover */
+h2 a:hover {
+    color: #005a8d;
+}

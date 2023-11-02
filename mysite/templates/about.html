@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About - My Blog{% endblock %}
+
+{% block style_block %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock style_block %}
+
+{% block content %}
+    <h1>About Us</h1>
+    <p>
+        Welcome to the "About Us" page of My Blog. We are a passionate team of writers and creators who aim to provide you with informative and engaging content on a wide range of topics.
+    </p>
+
+    <h2>Our Mission</h2>
+    <p>
+        Our mission is to share knowledge, inspire, and connect with our readers through well-researched articles and blog posts. We are dedicated to delivering high-quality content that educates and entertains.
+    </p>
+
+    <h2>Meet the Team</h2>
+    <ul>
+        <li>
+            <strong>John Doe</strong>
+            <p>Editor-in-Chief</p>
+        </li>
+        <li>
+            <strong>Jane Smith</strong>
+            <p>Senior Writer</p>
+        </li>
+        <!-- Add more team members as needed -->
+    </ul>
+{% endblock %}
