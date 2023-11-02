@@ -1,0 +1,33 @@
+/* Style the blog post title */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the publication date */
+p.published-date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+/* Style the blog post content */
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style the "Back to All Posts" link */
+a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+/* Style the "Back to All Posts" link on hover */
+a:hover {
+    color: #005a8d;
+}

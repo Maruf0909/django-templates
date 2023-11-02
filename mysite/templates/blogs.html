@@ -12,9 +12,9 @@
     <ul>
         {% for blog in blogs %}
             <li>
-                <h2><a href="#">{{ blog.title }}</a></h2>
+                <h2><a href="{% url 'blogs_detail' blog.id %}">{{ blog.title }}</a></h2>
                 <p>Published on {{ blog.published.month }} {{ blog.published.day }}, {{ blog.published.year }}</p>
-                <p>{{ blog.content }}</p>
+                <p>{{ blog.content }}...</p>
             </li>
         {% endfor %}
     </ul>

@@ -20,8 +20,12 @@ class ContactView(View):
 
 
 class BlogsView(View):
-    def get(self, request: HttpRequest) -> HttpResponse:
-        content = {
-            'blogs': [{'id': blog.id, 'title': blog.title, 'content': blog.content[:100], 'published': blog.published} for blog in Blog.objects.all()]
-        }
-        return render(request, 'blogs.html', context=content)
+    def get(self, request: HttpRequest, pk=None) -> HttpResponse:
+        if pk is None:
+            context = {
+                'blogs': [{'id': blog.id, 'title': blog.title, 'content': blog.content[:100], 'published': blog.published} for blog in Blog.objects.all()]
+            }
+            return render(request, 'blogs.html', context=context)
+        else:
+            blog = Blog.objects.get(id=pk)
+            return render(request, 'blog_detail.html', context={'blog': blog})
